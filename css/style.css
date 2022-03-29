@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+/* Generales*/    
+}
+body{
+    width: min(90%, 1200px);
+    background-color: rgb(181, 241, 241);
+    display: flex;
+    flex-direction: column;
+    min-height: 100hv;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none; /*Desaparece subrayado en enlaces*/
+    font-size: 25px;
+    color: wheat;
+    font-weight:bold;
+}
+
+/*Header*/ 
+header{
+    width: 100%;
+    background-color: rgb(224, 127, 233);
+    display: flex;
+    padding: 10px;
+
+}
+header .header_logo{
+    width: 15%;
+}
+
+header .header_logo img{
+    width: 100px;
+    height: 100px;
+
+}
+
+header .header_nombre{
+    width: 75%;
+    
+}
+
+header .header_nombre h1{
+    color: wheat;
+    text-align: center;    
+}
+ /* Navegación*/
+nav{
+    width: 100%;
+    background-color: rgb(248, 122, 189);
+    /* padding: 10px; */
+}
+
+nav ul{
+    list-style-type: none; /* Quitar vinietas*/
+    display: flex;
+    /* justify-content: space-around; */
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    background-color: rgb(245, 142, 216);
+    flex: auto;
+    text-align: center;
+    padding: 10px;
+}
+ nav ul li:hover{
+    background-color: rgb(102, 179, 241);
+}
+/* nav ul li .li1:hover{
+    background-color: rgb(102, 179, 241);
+}
+nav ul li2:hover{
+    background-color: rgb(107, 241, 102);
+}
+nav ul li3:hover{
+    background-color: rgb(241, 181, 102);
+}
+nav ul li4:hover{
+    background-color: rgb(241, 102, 109);
+} */
+
+nav ul li a:hover{
+    color: blueviolet; 
+}
+/* Sección principal*/
+.seccion_principal{
+    width: 100%;
+    display: flex;
+}
+.seccion_principal main{
+    width: 75%;
+    background-color: rgb(118, 118, 243);
+    flex-grow: 1;
+    
+} 
+
+.seccion_principal aside{
+    width: 25%;
+    background-color: rgb(161, 22, 127);
+}
+footer{
+    width: 100%;
+    background-color: rgb(223, 235, 190);
+    padding: 10px;
+    text-align: center;
+}
+
+footer p{
+    color:rgb(255, 102, 0);
+    font-size: 15px;
+}
+@media screen and (max-width: 768px){
+    nav ul{
+        flex-direction: column;
+    }
+}
+
+article{
+    padding: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+main{
+    padding: 10px;
+}
+article .seccion1{
+
+padding: 5px;
+margin: 10px;
+border: 1px solid black;
+
+}
+
+article .seccion1 figure{
+    background-color: rgb(241, 106, 230);
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+
+}
+article .seccion1 figure img{
+    width: 50%;
+    height: 200px;
+}
+
+.sugerencia_form{
+    background-color: rgb(114, 157, 175);
+    width: 80%;
+    padding: 20px;
+    margin: 10px auto;
+    border: 1px solid #111;
+border-radius: 10px;
+}
+.sugerencia_form h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sugerencia_form [placeholder]{
+  
+    padding: 5px;
+}
+
+.sugerencia_form input[type=text],  .sugerencia_form input[type=email]{
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+.sugerencia_form textarea{
+    width: 100%;
+    resize: none;
+    margin-bottom: 15px;
+}
+.sugerencia_form input[type=submit]{
+    width: 100%;
+    background-color: aqua;
+    color: blue;
+    border: 1px solid #1F2194;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.sugerencia_form input[type=submit]:hover{
+    background-color: #1f9477;
+    color: rgb(223, 226, 64);
+    border: 1px solid #77e99d;
+    cursor: pointer;
+}
